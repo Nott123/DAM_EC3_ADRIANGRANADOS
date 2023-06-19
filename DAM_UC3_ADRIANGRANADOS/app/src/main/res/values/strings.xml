@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">DAM_UC3_ADRIANGRANADOS</string>
+    <string name="idcorreo">Correo Electronico</string>
+    <string name="correoelectronico">Correo Electronico</string>
+    <string name="clave">Contraseña</string>
+    <string name="Boton1">Entrar</string>
+    <string name="registro">Registrate</string>
+    <string name="regsitro2">Es gratis (y lo seguira siendo)</string>
+    <string name="idnombre">Nombre:</string>
+    <string name="registro3">Registrate</string>
+    <string name="apellido">Apellidos:</string>
+    <string name="correologin">Tu direccion de correo electronico</string>
+    <string name="clavenueva">Contraseña nueva:</string>
+    <string name="sexo">Sexo</string>
+    <string name="fecha">Fecha de Nacimiento</string>
+    <string name="sesion">No cerrar sesion</string>
+    <string name="sesiontexto">¿Haz olvidado tu contraseña?</string>
+</resources>

@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3ECEC"
+    android:backgroundTint="#4369B4"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="402dp"
+        android:layout_height="192dp"
+        android:background="#4369B5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="-3dp">
+
+        <TextView
+            android:id="@+id/idcorreo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="40dp"
+            android:drawableLeft="@drawable/baseline_person_24"
+            android:text="@string/correoelectronico"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#FDFBFB"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/idclave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="40dp"
+            android:drawableLeft="@drawable/baseline_alternate_email_24"
+            android:text="@string/clave"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#F1F1F1"
+            app:layout_constraintStart_toEndOf="@+id/idcorreo"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="147dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:background="#F1F0F0"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#090808"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idcorreo" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="141dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:background="#F4EFEF"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textColor="#191919"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName"
+            app:layout_constraintTop_toBottomOf="@+id/idclave" />
+
+        <Button
+            android:id="@+id/idbutton"
+            android:layout_width="81dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="60dp"
+            android:background="#4369B4"
+            android:text="@string/Boton1"
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@+id/editTextTextPassword"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <CheckBox
+            android:id="@+id/idsesion"
+            android:layout_width="140dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/sesion"
+            android:textColor="#F8F5F5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+        <TextView
+            android:id="@+id/idtextosesion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/sesiontexto"
+            android:textColor="#F6F2F2"
+            app:layout_constraintStart_toEndOf="@+id/idsesion"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="500dp"
+        android:layout_height="528dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="0.769"
+        app:srcCompat="@drawable/c600cb4851ae945108be47b78807a167" />
+
+    <TextView
+        android:id="@+id/idtexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/registro"
+        android:textColor="#121111"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/regsitro2"
+        android:textColor="#0B0A0A"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idtexto" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:text="@string/idnombre"
+        android:textColor="#0B0A0A"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="225dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:background="#F4EFEF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#0B0A0A"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName6"
+        android:layout_width="207dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
+        android:background="#F4EFEF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#0B0A0A"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/idsexo"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword4" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName4"
+        android:layout_width="226dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:background="#F4EFEF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#0B0A0A"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/idapellidos"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+
+    <Button
+        android:id="@+id/idbutton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:drawableLeft="@drawable/baseline_check_24"
+        android:text="@string/registro3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
+
+    <TextView
+        android:id="@+id/idapellidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="28dp"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:text="@string/apellido"
+        android:textColor="#0B0A0A"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/idcorreologin"
+        android:layout_width="108dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/baseline_email_24"
+        android:text="@string/correologin"
+        android:textColor="#0B0A0A"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idapellidos" />
+
+    <TextView
+        android:id="@+id/idclavenew"
+        android:layout_width="105dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/baseline_email_24"
+        android:text="@string/clavenueva"
+        android:textColor="#0B0A0A"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/idcorreologin" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword4"
+        android:layout_width="206dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:background="#F4EFEF"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="#0B0A0A"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/idclavenew"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress4" />
+
+    <TextView
+        android:id="@+id/idsexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:text="@string/sexo"
+        android:textColor="#0B0A0A"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idclavenew" />
+
+    <TextView
+        android:id="@+id/idfecha"
+        android:layout_width="130dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
+        android:drawableLeft="@drawable/baseline_date_range_24"
+        android:text="@string/fecha"
+        android:textColor="#0E0E0E"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idsexo" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="193dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#F4F4F4"
+        android:ems="10"
+        android:inputType="date"
+        android:textColor="#121111"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/idfecha"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress4"
+        android:layout_width="211dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:background="#F4EFEF"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textColor="#101010"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/idcorreologin"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
